@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>String과 StringBuilder :: mypage</title>
     <link rel="canonical" href="https://elliot00jee.github.io/mypage/TIL/latest/2022-07/2022-07-19.html">
-    <meta name="generator" content="Antora 3.1.2">
+    <meta name="generator" content="Antora 3.1.14">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <link rel="stylesheet" href="../../../_/css/site-extra.css">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
-    <script>var uiRootPath = '../../../_'</script>
   </head>
   <body class="article">
 <header class="header">
@@ -32,6 +31,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="../index.html">TIL</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
@@ -56,6 +56,19 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">2025-11</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2025-11/2025-11-12.html">2025-11-12</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
 </ul>
   </nav>
 </div>
@@ -66,7 +79,7 @@
   </div>
   <ul class="components">
     <li class="component">
-      <a class="title" href="../../../codingstory/latest/index.html">CodingStory</a>
+      <div class="title"><a href="../../../codingstory/latest/index.html">CodingStory</a></div>
       <ul class="versions">
         <li class="version is-latest">
           <a href="../../../codingstory/latest/index.html">default</a>
@@ -74,7 +87,7 @@
       </ul>
     </li>
     <li class="component">
-      <a class="title" href="../../../learningstory/latest/index.html">learningstory</a>
+      <div class="title"><a href="../../../learningstory/latest/index.html">learningstory</a></div>
       <ul class="versions">
         <li class="version is-latest">
           <a href="../../../learningstory/latest/index.html">default</a>
@@ -82,7 +95,7 @@
       </ul>
     </li>
     <li class="component is-current">
-      <a class="title" href="../index.html">TIL</a>
+      <div class="title"><a href="../index.html">TIL</a></div>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../index.html">default</a>
@@ -105,8 +118,8 @@
     <li><a href="2022-07-19.html">2022-07-19</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/elliot00jee/TIL/edit/main/docs/modules/2022-07/pages/2022-07-19.adoc">Edit this Page</a></div>
-  </div>
+<div class="edit-this-page"><a href="https://github.com/elliot00jee/TIL/edit/main/docs/modules/2022-07/pages/2022-07-19.adoc">Edit this Page</a></div>
+</div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
@@ -170,7 +183,7 @@
 </div>
 </div>
 <div class="paragraph">
-<p>인텔리제이가 추천한대로 코드를 수정하면 String <code>+</code> 연산을 사용한다. 사실 <code>StringBuilder</code> 를 사용하면서도 참 가독성이 떨어진다고 생각했는데 String <code>+</code> 연산으로 수정하고 나니 코드도 간결해지고 좋은 것 같다.</p>
+<p>인텔리제이가 추천한대로 코드를 수정하면 String <code>` 연산을 사용한다. 사실 `StringBuilder` 를 사용하면서도 참 가독성이 떨어진다고 생각했는데 String `</code> 연산으로 수정하고 나니 코드도 간결해지고 좋은 것 같다.</p>
 </div>
 <div class="paragraph">
 <p>그런데, String에 값을 초기화할 때 발생하는 문자열은 컴파일러가 내부적으로 <code>StringBuilder</code> 를 생성해서 처리해주는 건 알겠는데, 기존에 값이 있는 String에 <code>+</code> 연산을 하게 되면 어떻게 되려나?</p>
